@@ -1,0 +1,838 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+  header("location: login.php");
+  exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>राजस्थान a Travel Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="राजस्थान Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style-sheets -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery-ui.css" /><!-- // calendar -->
+	<!-- // Style-sheets -->
+	<!-- Online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,200,400,500,600" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<!--// Online-fonts -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!--Header-->
+	<div class="header" id="home">
+		<!--top-bar-w3-agile-->
+		<div class="top-bar-w3-agile">
+			<div class="container">
+				<div class="header-top-agileits">
+					<div class="agile_forms">
+						<p><span class="fa fa-map-marker" aria-hidden="true"></span></p>
+					</div>
+					<ul class="top-right-info-w3ls">
+						<li><a href="https://www.facebook.com/rajasthantourism/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://mail.gov.in/iwc_static/c11n/allDomain/layout/login_gov2.jsp?lang=en-US&3.0.1.2.0_15121607&svcs=abs,mail,smime,calendar,c11n"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="https://twitter.com/rajgovofficial?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://in.pinterest.com/diprrajasthan/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="header-nav">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							<h1><a class="navbar-brand" href="index.html">रा<span>जस्थान</span></a></h1>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<nav class="cl-effect-15" id="cl-effect-15">
+								<ul>
+									<li><a href="#home" class="active" data-hover="Home">Home</a></li>
+									<li><a href="about.html" data-hover="Guide">Guide</a></li>
+									
+									<li><a href="home2.php" data-hover="Logout">Logout</a></li>
+								</ul>
+							</nav>
+						</div>
+					</nav>
+					<div class="w3ls_search">
+						<div class="cd-main-header">
+							<ul class="cd-header-buttons">
+								<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+							</ul>
+							<!-- cd-header-buttons -->
+						</div>
+						<div id="cd-search" class="cd-search">
+							<form action="#" method="post">
+								<input name="Search" type="search" placeholder="Search...">
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!--//top-bar-w3-agile-->
+		<!--Slider-->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li>
+						<div class="slider-img-w3layouts one">
+							<div class="container">
+								<div class="slider-info">
+									<h3>#myRajasthan..Thar The Desert</h3>
+									<p> ‘Jaane Kya Dikh Jaye’</p>
+									<div class="readmore-w3-agileits"><a href="#" data-toggle="modal" data-target="#myModal1">sign in</a></div>
+									
+								
+								
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img-w3layouts two">
+							<div class="container">
+								<div class="slider-info">
+									<h3>#myRajasthan..Rajasthani cuisine</h3>
+									<p> ‘Jaane Kya Dikh Jaye’</p>
+									<div class="readmore-w3-agileits"><a href="#" data-toggle="modal" data-target="#myModal1">sign in</a></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img-w3layouts three">
+							<div class="container">
+								<div class="slider-info">
+									<h3>#myRajasthan..</h3>
+									<p> ‘Jaane Kya Dikh Jaye’</p>
+									<div class="readmore-w3-agileits"><a href="#" data-toggle="modal" data-target="#myModal1">sign in</a></div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+		
+		
+
+		
+		
+		
+		
+	
+			<!-- Modal1 -->
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						
+						
+					
+				<iframe scrolling="no" width="100%" height="200%" src="home2.php"></iframe>
+					
+					
+				
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal1 -->
+		<!--//Slider-->
+	</div>
+	<!--//Header-->
+	<!--banner form-->
+	<div id="horizontalTab">
+		<ul class="resp-tabs-list">
+			<li>Hotels</li>
+			<li>Flights</li>
+			<li>Cars</li>
+		</ul>
+		<div class="resp-tabs-container">
+			<div class="tab1">
+				<form action="#" method="post">
+					<div class="col-md-4 fields">
+						<span>City or Hotel Name</span>
+						<select class="form-control">
+										<option>select</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+									</select>
+					</div>
+					<div class="col-md-2 fields">
+						<span>Check-In</span>
+						<input id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+						    required="">
+					</div>
+					<div class="col-md-2 fields">
+						<span>Check-Out</span>
+						<input id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+						    required="">
+					</div>
+					<div class="col-md-2 fields">
+						<span>Adults</span>
+						<select class="form-control">
+										<option>select</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>More than 5</option>
+									</select>
+					</div>
+					<div class="col-md-2">
+						<input type="submit" value="Submit">
+					</div>
+				</form>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="tab2">
+				<div class="register">
+					<form action="#" method="post">
+						<div class="col-md-6 fields">
+							<span>From</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+									</select>
+						</div>
+						<div class="col-md-6 fields">
+							<span>To</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+									</select>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-md-3 fields">
+							<span>Departing</span>
+							<input id="datepicker2" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+							    required="">
+						</div>
+						<div class="col-md-3 fields">
+							<span>Returning</span>
+							<input id="datepicker3" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+							    required="">
+						</div>
+						<div class="col-md-2 fields">
+							<span>Adults</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>More than 5</option>
+									</select>
+						</div>
+						<div class="col-md-2 fields">
+							<span>Child's</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>More than 5</option>
+									</select>
+						</div>
+						<div class="col-md-2 fields">
+							<input type="submit" value="Submit">
+						</div>
+						<div class="clearfix"></div>
+					</form>
+				</div>
+			</div>
+			<div class="tab3">
+				<div class="reset">
+					<form action="#" method="post">
+						<div class="col-md-4 fields">
+							<span>Country</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+									</select>
+						</div>
+						<div class="col-md-4 fields">
+							<span>City</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+									</select>
+						</div>
+						<div class="col-md-4 fields">
+							<span>Location</span>
+							<select class="form-control">
+										<option>select</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+										<option>Lorem Ipsum</option>
+										<option>Adipiscing</option>
+									</select>
+						</div>
+						<div class="col-md-4 fields">
+							<span>Pick up Date</span>
+							<input id="datepicker4" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+							    required="">
+						</div>
+						<div class="col-md-4 fields">
+							<span>Drop off Date</span>
+							<input id="datepicker5" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+							    required="">
+						</div>
+						<div class="col-md-4 fields">
+							<input type="submit" value="Submit">
+						</div>
+						<div class="clearfix"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//banner form-->
+
+	<!-- About -->
+	<div class="about">
+		<h3 class="tittle">A little about us</h3>
+		<div class="banner_bottom_right">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-text1">
+						</div>
+					</li>
+					<li>
+						<div class="banner-text2">
+						</div>
+					</li>
+					<li>
+						<div class="banner-text3">
+						</div>
+					</li>
+					<li>
+						<div class="banner-text4">
+							<iframe src="https://player.vimeo.com/video/92605278"></iframe>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="col-md-7 banner_bottom_left">
+			<h3>Making the most out of your holiday</h3>
+			<p class="para-agileits"> Rajasthan which is also known as the “Land of Maharajas” is the largest state of India, covering an area of about 342,239 sq. km. It comprises of 33 districts and its largest city is Jaipur, which is also its capital. Being located on the western side of the country, it shares its border with Pakistan to its northwest and to the west it shares its border with Sindh. To its north it has Punjab, Uttar Pradesh and Haryana to its northeast; to its southeast it has Madhya Pradesh and Gujarat to its southwest.  The glory of the state is retained by its majestic palaces, forts and monuments. The vibrant culture and rich heritage of this princely state draw innumerable tourists from across the globe.</p>
+			<p class="para-agileits"></p>
+			<div class="readmore-w3-agileits"><a href="#" data-toggle="modal" data-target="#myModal1">sign in</a></div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //About -->
+	<!--sevices-->
+	<div class="sevices-w3layouts" id="services">
+		<div class="container">
+			<h3 class="tittle white">Why we are the best</h3>
+			<div class="row">
+				<div class="col-md-4 sevices-grid text-right">
+					<div class="icon">
+						<span class="fa fa-plane" aria-hidden="true"></span>
+						<h4></h4>
+					</div>
+					<p class="para-agileits">We provide you safe and secure travelling facilities.</p>
+
+				</div>
+				<div class="col-md-4 sevices-grid text-center">
+					<div class="icon">
+						<span class="fa fa-thumbs-up" aria-hidden="true"></span>
+						<h4>Handpicked Hotels</h4>
+					</div>
+					<p class="para-agileits">You can order your hotel online at the minimum cost.</p>
+				</div>
+				<div class="col-md-4 sevices-grid text-left">
+					<div class="icon">
+						<span class="fa fa-users" aria-hidden="true"></span>
+						<h4>Nice Support</h4>
+					</div>
+					<p class="para-agileits">Helpline number available 24*7.</p>
+				</div>
+				<div class="col-md-6 sevices-grid text-right">
+					<div class="icon">
+						<span class="fa fa-briefcase" aria-hidden="true"></span>
+						<h4>World class services</h4>
+					</div>
+					<p class="para-agileits">We provide you with the best services.</p>
+				</div>
+				<div class="col-md-6 sevices-grid text-left">
+					<div class="icon">
+						<span class="fa fa-credit-card-alt" aria-hidden="true"></span>
+						<h4>Best Price Guarantee</h4>
+					</div>
+					<p class="para-agileits">The prices are as low as possible.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//sevices-->
+	<!--blog -->
+	<div class="blog" id="blog">
+		<div class="container">
+			<h3 class="tittle">Blog</h3>
+			<div class="blog-grid-w3-agileits">
+				<div class=" col-md-7 blog-img blog-img1-agileits-w3layouts">
+					<a href="#" data-toggle="modal" data-target="#myModal2">
+						<h6>              </h6>
+						<p><span class="fa fa-clock-o" aria-hidden="true"></span>            </p>
+					</a>
+				</div>
+				<div class=" col-md-5 blog-info-w3layouts">
+					<div class="inner-info-w3ls">
+						<h5>Jaipur</h5>
+						<p class="para-agileits">Jaipur is the capital and the largest city of the Indian state of Rajasthan in Northern India. It was founded on 18 November 1727 by Jai Singh II, the ruler of Amer after whom the city is named. As of 2011, the city has a population of 3.1 million, making it the tenth most populous city in the country. Jaipur is also known as the pink city.
+</p>
+					</div>
+					<a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal2">Read More</a>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-grid-w3-agileits">
+				<div class=" col-md-5 blog-info-w3layouts blog-mid">
+					<div class="inner-info-w3ls-mid">
+						<h5>Udaipur</h5>
+						<p class="para-agileits">Udaipur also known as the "City of Lakes" or the "Kashmir of Rajasthan," is a major city, municipal corporation and the administrative headquarters of the Udaipur district in the Indian state of Rajasthan. It is the historic capital of the kingdom of Mewar in the former Rajputana Agency.
+</p>
+					</div>
+					<a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal3">Read More</a>
+
+				</div>
+				<div class=" col-md-7 blog-img blog-img2-agileits-w3layouts">
+					<a href="#" data-toggle="modal" data-target="#myModal3">
+						<h6>                         </h6>
+						<p><span class="fa fa-clock-o" aria-hidden="true"></span>                 </p>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-grid-w3-agileits">
+				<div class=" col-md-7 blog-img blog-img3-agileits-w3layouts">
+					<a href="#" data-toggle="modal" data-target="#myModal4">
+						<h6>                               </h6>
+						<p><span class="fa fa-clock-o" aria-hidden="true"></span>             </p>  
+					</a>
+				</div>
+				<div class=" col-md-5 blog-info-w3layouts">
+					<div class="inner-info-w3ls">
+						<h5>Jodhpur</h5>
+						<p class="para-agileits">Jodhpur is the second largest city in the Indian state of Rajasthan and officially the second metropolitan city of the state. It was formerly the seat of a princely state of the same name. The capital of the kingdom was known as Marwar.</p>
+					</div>
+					<a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal4">Read More</a>
+	<script charset="utf-8" type="text/javascript" src="http://movetotravel.com/iframe.js"> </script>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //blog -->
+	<!-- Modal2 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>राजस्थान</h4>
+					<img src="images/jaipur.jpg" alt=" " class="img-responsive">
+					<h5>Hawa Mahal located in Pink City.</h5>
+					<p>Hawa Mahal is a palace in Jaipur, India. It is constructed of red and pink sandstone. The palace sits on the edge of the City Palace, Jaipur, and extends to the zenana, or women's chambers. The structure was built in 1799 by Maharaja Sawai Pratap Singh. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal2 -->
+	<!-- Modal3 -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>राजस्थान</h4>
+					<img src="images/udaipur.jpg" alt=" " class="img-responsive">
+					<h5>Udaipur</h5>
+					<p>Often referred to as the 'Venice of the East', the city of lakes Udaipur is located around azure water lakes and is hemmed in by lush green hills of Aravallis. The famous Lake Palace, located in the middle of Lake Pichola is one of the most beautiful sights of Udaipur. It is also home to Jaisamand Lake, claimed to be the second largest man-made sweet water lake in Asia. The beautiful City Palace and Sajjangarh (Monsoon Palace) add to the architectural beauty and grandeur of the city. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal3 -->
+	<!-- Modal4 -->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>राजस्थान</h4>
+					<img src="images/jodhpurr.jpg" alt=" " class="img-responsive">
+					<h5>Jodhpur</h5>
+					<p>Jodhpur, the second largest city in Rajasthan is popularly known as the Blue City. The name is clearly befitting as most of the architecture – forts, palaces, temples, havelis and even houses are built in vivid shades of blue. The strapping forts that tower this magnificent city sum up to a spectacle you would not want to miss. The mammoth, imposing fortress of Mehrangarh has a landscape dominating a rocky ridge with the eight gates leading out of the fortress. The new city is located outside the structure. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal4 -->
+
+	<!-- //blog -->
+
+	<!-- testimonials -->
+	<div id="testimonials" class="testimonials">
+		<div class="container">
+			<h3 class="tittle">Travellers Feedback</h3>
+		</div>
+		<div class="test-monials">
+			<!--//screen-gallery-->
+			<div class="col-md-5 text-image-agileits-w3layouts">
+
+			</div>
+			<div class="col-md-7 sreen-gallery-cursual">
+				<div id="owl-demo" class="owl-carousel">
+					<div class="item-owl">
+						<div class="test-review">
+							<div class="img-agile">
+								<img src="images/c1.jpg" class="img-responsive" alt="" />
+							</div>
+							<div class="testi-right-agileits">
+								<h5>Williamson<span> - Italy</span></h5>
+								<ul class="top-right-info-w3ls">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+							<div class="textagile">
+								<p>I loved the Jaipur city. it has so many forts and the old city is having the maximum buildings of Pink color.  The market is also good and reasonable for shopping purposes. It also has a wide vareity of rajasthani food.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item-owl">
+						<div class="test-review">
+							<div class="img-agile">
+								<img src="images/c2.jpg" class="img-responsive" alt="" />
+							</div>
+							<div class="testi-right-agileits">
+								<h5>Kristina<span> - Spain</span></h5>
+								<ul class="top-right-info-w3ls">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+							<div class="textagile">
+								<p> Had a great time in Rajasthan. It has many historical places and forts to watch. I loved the Hawa Mahal. The Govt is also very supporting. Though the food was not so good. I insist you people to visit Amer Palace.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item-owl">
+						<div class="test-review">
+							<div class="img-agile">
+								<img src="images/c3.jpg" class="img-responsive" alt="" />
+							</div>
+							<div class="testi-right-agileits">
+								<h5>Williamson<span> - Egypt</span></h5>
+								<ul class="top-right-info-w3ls">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+							<div class="textagile">
+								<p>The place is good to visit but transport facility should be improved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+			
+		
+		<!----<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>---->
+	
+	
+	<!--// testimonials -->
+	<!-- Footer -->
+	<div class="reach-wthree">
+		<div class="container">
+			<h3> </h3> 
+			<div class="reach-right-agileits-w3layouts">
+				<p>        </p> 
+				<p>            </p>
+				<h6><span class="fa fa-phone" aria-hidden="true"></span> (+91) 1800-456-7890</h6>
+			</div>
+		</div>
+	</div>
+	<div class="w3l_footer_agileinfo">
+		<div class="container">
+			<div class="col-md-3 mailadd-w3ls">
+				<p><span class="fa fa-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">tourism.rajasthan@example.com</a></p>
+			</div>
+			<div class="col-md-6 botttom-nav-agileits">
+				<ul class="nav-w3ls">
+					<li><a href="#home" class="scroll">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3l-social">
+				<ul class="top-right-info-w3ls">
+					<li><a href="https://www.facebook.com/rajasthantourism/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://mail.gov.in/iwc_static/c11n/allDomain/layout/login_gov2.jsp?lang=en-US&3.0.1.2.0_15121607&svcs=abs,mail,smime,calendar,c11n"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/rajgovofficial?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://in.pinterest.com/diprrajasthan/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //Footer -->
+	<!--Copy-right-->
+	<div class="copy">
+		<div class="container">
+			<h2><a href="index.html"><span>रा</span>जस्थान </a></h2>
+			<p>© 2017 राजस्थान . All Rights Reserved | Design by  </p>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--// Copy-right -->
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- //js -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!-- About-Responsiveslides -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: false,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!--// About-Responsiveslides -->
+	<!--Rersponsive tabs-->
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type: 'vertical',
+				width: 'auto',
+				fit: true
+			});
+		});
+	</script>
+	<!-- //Rersponsive tabs -->
+
+	<!-- testimonials required-js-files-->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 1,
+				lazyLoad: true,
+				autoPlay: true,
+				navigation: false,
+				navigationText: false,
+				pagination: true,
+			});
+		});
+	</script>
+	<!--// testimonials required-js-files-->
+
+	<!--search-bar-->
+	<script src="js/main.js"></script>
+	<!--//search-bar-->
+
+
+	<!-- Calendar -->
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#datepicker,#datepicker1,#datepicker2,#datepicker3,#datepicker4,#datepicker5").datepicker();
+		});
+	</script>
+	<!-- //Calendar -->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+	
+	
+	
+</body>
+
+
+</html>
